@@ -1,11 +1,23 @@
-import React from 'react'
-import assets from '../assets/assets'
+
+import React from "react";
+import { motion } from "framer-motion";
+import assets from "../assets/assets";
 
 const Footer = ({ theme }) => {
   return (
-    <div className='bg-slate-50 dark:bg-gray-900 pt-10 sm:pt-10  px-4 sm:px-10 lg:px-24 xl:px-40'>
+    <motion.div
+        initial={{opacity: 0, y:50}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.8}}
+        viewport={{once: true}} 
+        className='bg-slate-50 dark:bg-gray-900 pt-10 sm:pt-10  px-4 sm:px-10 lg:px-24 xl:px-40'>
 
-      <div className='flex justify-between lg:items-center max-lg:flex-col gap-10'>
+      <motion.div
+        initial={{opacity: 0, x: -30}}
+        whileInView={{opacity: 1, x: 0}}
+        transition={{duration: 0.6, delay:0.2}}
+        viewport={{once: true}}
+      className='flex justify-between lg:items-center max-lg:flex-col gap-10'>
 
         <div className='space-y-5 text-sm text-gray-700 dark:text-gray-400'>
           <img
@@ -45,7 +57,12 @@ const Footer = ({ theme }) => {
           </ul>
         </div>
 
-                <div className='text-gray-600 dark:text-gray-400'>
+          <motion.div
+            initial={{opacity: 0, x:30}}
+            whileInView={{opacity: 1, x: 0}}
+            transition={{duration: 0.6, delay: 0.3}}
+            viewport={{once: true}} 
+            className='text-gray-600 dark:text-gray-400'>
           <h3 className='font-semibold'>
             Subscribe to our newsletter
           </h3>
@@ -65,25 +82,32 @@ const Footer = ({ theme }) => {
               Subscribe
             </button>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <hr className='border-gray-300 dark:border-gray-600 my-6' />
 
 
-      <div className='pb-6 text-sm text-gray-500 flex justify-center sm:justify-between gap-4 flex-wrap'>
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration: 0.5, delay:0.4}}
+        viewport={{once: true}} 
+        className='pb-6 text-sm text-gray-500 flex justify-center sm:justify-between gap-4 flex-wrap'>
         <p>
           Copyright 2025 &copy; agency.ai - All right reserved
         </p>
 
-        <div className='flex items-center justify-between gap-4'>
+        <div
+        
+        className='flex items-center justify-between gap-4'>
           <img src={assets.facebook_icon} alt='Facebook' />
           <img src={assets.twitter_icon} alt='Twitter' />
           <img src={assets.instagram_icon} alt='Instagram' />
           <img src={assets.linkedin_icon} alt='LinkedIn' />
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

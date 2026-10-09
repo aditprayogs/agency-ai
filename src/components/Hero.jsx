@@ -2,6 +2,7 @@ import React from "react";
 import asset from "../assets/assets";
 import TrustedBy from "./TrustedBy";
 import Title from "./Title";
+import { easeOut, motion } from 'motion/react';
 
 const Hero = () => {
   return (
@@ -27,8 +28,10 @@ const Hero = () => {
       "
     >
 
-      {/* TRUSTED */}
-      <div
+      <motion.div
+        initial={{opacity: 0, y:20}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.5, delay:0.7}}
         className="
           inline-flex
           items-center
@@ -68,11 +71,15 @@ const Hero = () => {
         >
           Trusted by 10k+ people
         </p>
-      </div>
+      </motion.div>
 
 
       {/* TITLE */}
-      <div
+      <motion.div
+        initial={{opacity: 0, y:20}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.6, delay:0.8}}
+        viewport={{once: true}}
         className="
           text-4xl
           sm:text-5xl
@@ -110,11 +117,15 @@ const Hero = () => {
         </span>{" "}
         
         impact.
-      </div>
+      </motion.div>
 
 
       {/* DESCRIPTION */}
-      <div
+      <motion.div
+        initial={{opacity: 0, y:20}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.5, delay:1}}
+        viewport={{once: true}}
         className="
           text-sm
           sm:text-lg
@@ -134,11 +145,16 @@ const Hero = () => {
       >
         Creating meaningful connections and turning big ideas into
         interactive digital experiences.
-      </div>
+      </motion.div>
 
 
       {/* HERO IMAGE */}
-      <div className="relative w-full flex justify-center">
+      <motion.div
+        initial={{opacity: 0, scale: 0.9}}
+        whileInView={{opacity: 1, scale: 1}}
+        transition={{duration: 0.6, delay:2}} 
+        viewport={{once: true}}
+        className="relative w-full flex justify-center">
 
         <img
           src={asset.hero_img}
@@ -171,7 +187,7 @@ const Hero = () => {
           "
         />
 
-      </div>
+      </motion.div>
 
      
 
