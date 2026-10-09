@@ -1,16 +1,98 @@
-# React + Vite
+# 🚀 My Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive personal portfolio website built with **React.js, Vite, and Tailwind CSS**. Designed to showcase my projects, skills, services, and experience with a clean interface and interactive user experience.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Website:** [View Live Demo](https://your-project.vercel.app)
+- **Repository:** [GitHub Repository](https://github.com/USERNAME/REPOSITORY)
 
-## React Compiler
+## 🎨 UI Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🏠 Home Page
+<!-- Replace with your homepage screenshot -->
+![Home Page](./screenshots/home.png)
 
-## Expanding the Oxlint configuration
+### 👤 About & Services
+<!-- Replace with your about/services screenshot -->
+![About and Services](./screenshots/services.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 💼 Projects & Portfolio
+<!-- Replace with your portfolio screenshot -->
+![Projects and Portfolio](./screenshots/projects.png)
+
+## ✨ Features
+
+- Responsive design for desktop, tablet, and mobile
+- Modern UI with smooth animations
+- Light and dark mode
+- Interactive navigation
+- Services and portfolio showcase
+- Contact form
+- Optimized production build
+
+## 🛠️ Tech Stack
+
+- React.js
+- Vite
+- JavaScript
+- Tailwind CSS
+- Motion
+- React Hot Toast
+
+## 📦 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/USERNAME/REPOSITORY.git
+cd REPOSITORY
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+
+### 5. Preview production build
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── Services.jsx
+│   ├── ContactUs.jsx
+│   └── Footer.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## 🚀 Deployment
+
+Deployed with [Vercel](https://vercel.com/).
+
+## 📄 License
+
+This project is intended for personal portfolio and educational purposes.
